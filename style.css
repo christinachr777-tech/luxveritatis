@@ -1,0 +1,104 @@
+/* style.css - Lux Veritatis */
+:root{
+  --bg: #fdfcf9;
+  --text: #1a1a1a;
+  --nav-bg: #1b2a41;
+  --accent: #b89b47;
+  --max-width: 900px;
+}
+
+*{box-sizing:border-box}
+
+html,body{
+  margin:0;
+  padding:0;
+  font-family: Georgia, "Times New Roman", serif;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+header{
+  background:var(--nav-bg);
+  color:#fff;
+  padding:22px 12px;
+  text-align:center;
+}
+
+.header-inner{
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+
+.site-title{
+  margin:0;
+  font-size:1.8rem;
+  color:var(--accent);
+  letter-spacing:0.6px;
+}
+
+nav{
+  margin-top:10px;
+}
+
+nav a{
+  color:var(--accent);
+  text-decoration:none;
+  margin:0 12px;
+  font-weight:700;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+nav a:hover{ text-decoration:underline; }
+
+main{
+  max-width:var(--max-width);
+  margin:48px auto;
+  padding:0 18px;
+}
+
+h1,h2,h3{ color:var(--accent); margin:0 0 14px 0; }
+
+p { line-height:1.65; margin:0 0 18px 0; }
+
+.article-list{ list-style:none; padding:0; margin:0; }
+.article-list li{ margin:12px 0; padding:12px; border-left:4px solid transparent; }
+.article-list li:hover{ border-left-color:var(--accent); background:rgba(184,155,71,0.03); }
+
+.footer{
+  background:var(--nav-bg);
+  color:#fff;
+  text-align:center;
+  padding:18px;
+  font-size:0.9rem;
+  margin-top:40px;
+}
+
+.lang-switch{
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin-top:8px;
+  font-size:0.9rem;
+}
+
+.container-flex{
+  display:flex;
+  gap:24px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card{
+  max-width:420px;
+  padding:18px;
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(11,20,30,0.04);
+  text-align:left;
+}
+
+/* responsive */
+@media (max-width:600px){
+  .site-title{ font-size:1.4rem; }
+  main{ margin:28px auto; padding:0 12px; }
+}
